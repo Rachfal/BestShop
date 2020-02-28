@@ -1,0 +1,128 @@
+.contact {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.contact .container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info h2 {
+  font-family: $font2;
+  font-size: 49px;
+  margin-bottom: 40px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.contact-info a {
+  color: $color-gray3;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.contact-info a::before {
+  display: inline-block;
+  content: "";
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: -30px;
+  top: -3px;
+}
+
+.contact-info a:nth-of-type(1)::before {
+  background: transparent url("../assets/Mail\ Icon.svg") 0% 0% no-repeat padding-box;
+}
+
+.contact-info a:nth-of-type(2)::before {
+  background: transparent url("../assets/Phone\ Icon.svg") 0% 0% no-repeat padding-box;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+.contact-form form label[for="contact-lbl"] {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $color1;
+}
+
+.contact-form form input[type="text"],
+.contact-form form input[type="email"] {
+  display: block;
+  width: 100%;
+  background: none;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid $color-gray2;
+  height: 40px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.contact-form form label[for="chbox"] {
+  padding-left: 34px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  color: $color-gray1;
+  font-size: 12px;
+}
+
+.contact-form form label[for="chbox"]::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  display: block;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid $color-gray2;
+  border-radius: 4px;
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.contact-form #chbox:checked ~ label[for="chbox"]::before {
+  background: #ffffff no-repeat center center url("../assets/Checkmark.svg");
+}
+
+.contact-form #chbox {
+  display: none;
+}
+@media (max-width: 930px) {
+  .contact .container {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .contact-info {
+    width: 80%;
+  }
+  .contact-info a {
+    display: block;
+    margin-top: 25px;
+  } 
+
+  .contact-form {
+    margin-top: 60px;
+    width: 90%;
+  }
+}

@@ -1,0 +1,54 @@
+.footer {
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+    box-shadow: 0px -5px 40px #00000029;
+    height: 89px;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 20px;
+  }
+  
+  .footer-logo {
+    align-self: center;
+  }
+  
+  .footer-logo a {
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 0;
+    color: $color1;
+    opacity: 1;
+  }
+  
+  .footer-logo p {
+    font-size: 11px;
+    color: $color-gray3;
+    margin-top: 10px;
+  }
+  
+  .footer-media {
+    align-self: center;
+  }
+  
+  #twitter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../assets/Twitter.svg") 0% 0% no-repeat padding-box;
+    margin-right: 15px;
+  }
+  
+  #facebook {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../assets/Facebook.svg") 0% 0% no-repeat padding-box;
+  }
+  

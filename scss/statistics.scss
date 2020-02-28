@@ -1,0 +1,126 @@
+.statistics {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  min-height: 531px;
+  margin-top: 50px;
+}
+
+.statistics h2 {
+  font-size: 36px;
+  margin: 20px;
+}
+
+.statistics .container {
+  height: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  
+}
+
+.statistics-box {
+  position: relative;
+  width: 120px;
+  margin: 30px;
+}
+
+.statistics-box:nth-of-type(1)::before {
+  width: 63px;
+  height: 63px;
+  background: $color2 no-repeat center center;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: 25px;
+}
+
+.statistics-box:nth-of-type(1)::after {
+  width: 63px;
+  height: 63px;
+  background: url(../assets/Person.svg) no-repeat center center;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: 50px;
+}
+
+.statistics-box:nth-of-type(2)::before {
+  width: 63px;
+  height: 63px;
+  background: $color1 no-repeat center center;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: 25px;
+}
+
+.statistics-box:nth-of-type(2)::after {
+  width: 63px;
+  height: 63px;
+  background: url(../assets/Eye.svg) no-repeat center center;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: 50px;
+}
+
+.statistics-box:nth-of-type(3)::before {
+  width: 63px;
+  height: 63px;
+  background: $color3 no-repeat center center;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: 25px;
+}
+
+.statistics-box:nth-of-type(3)::after {
+  width: 63px;
+  height: 63px;
+  background: url(../assets/Catalog.svg) no-repeat center center;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: 50px;
+}
+
+.statistics-box h4 {
+  font-size: 20px;
+  letter-spacing: 5.96px;
+}
+
+.statistics-box p {
+  font-size: 17px;
+  color: $color-gray3;
+}
+
+@media (max-width: 550px) {
+
+  .statistics {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    height: 800px;
+    margin-top: 50px;
+  }
+
+  .statistics .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 80%;
+  }
+}

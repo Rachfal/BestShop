@@ -1,0 +1,167 @@
+.header {
+  height: 70px;
+  
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header .container {
+  box-shadow: 0px 3px 6px #00000029;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1352px;
+  padding: 20px;
+}
+
+//   .header-logo {
+//   }
+
+.header-logo a {
+  text-decoration: none;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 38px;
+  letter-spacing: 0;
+  color: $color1;
+  opacity: 1;
+}
+
+//   .header-menu {
+//   }
+
+.header-menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.header-menu-list li {
+  display: block;
+  margin-left: calc(8vw);
+}
+
+.header-menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-family: $font1;
+  
+  color: $color-gray3;
+  letter-spacing: 3.28px;
+  opacity: 1;
+  display: block;
+  position: relative;
+}
+
+.header-menu a:hover {
+  color: #000000;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  background: $color1;
+  height: 4px;
+  width: 0;
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.header-menu a:hover::after {
+  width: calc(100% + 10px);
+  left: -5px;
+}
+
+.header-burger {
+  display: none;
+}
+
+@media (max-width: 800px) {
+
+  .header-menu {
+  }
+
+  .header-menu-list {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    box-shadow: 0px 3px 6px #00000029;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    transition: all 300ms ease;
+    font-size: 0;
+    
+
+    li {
+      display: none;
+    }
+  }
+
+  
+
+  .header-menu-list-visible {
+    height: 160px;
+    font-size: 15px;
+
+    li {
+      display: block;
+    }
+  }
+
+  .header-menu-list li {
+    
+  }
+
+  .header-menu a::after {
+    content: "";
+    display: none;
+  }
+
+  .header-burger {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    background: inherit;
+    cursor: pointer;
+    
+    span {
+      width: 30px;
+      height: 3px;
+      background: $color1;
+      transition: all 300ms ease-in-out;
+    }
+  }
+
+  .header-burger-cross {
+    span:first-child {
+      transform: rotate(45deg) translate(0, 12px)
+    }
+    span:nth-child(2) {
+      transform: translate(500px)
+    }
+    span:last-child {
+      transform: rotate(-45deg) translate(0, -12px)
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.opening {
+  padding-top: 130px;
+  background: #fff;
+  background-size: contain;
+  height: 842px;
+}
+
+.opening .container {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.opening-bg {
+  background: #fff url("../assets/Background.png") no-repeat center bottom;
+  background-size: 1000px 350px;
+  height: 350px;
+  margin: 0;
+}
+
+.opening h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 49px;
+  margin-bottom: 30px;
+}
+
+.opening p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.opening a {
+  display: inline-block;
+  font-family: $font1;
+  font-size: 16px;
+  width: 440px;
+  max-width: 90vw;
+  height: 67px;
+  background: $color1 0% 0% no-repeat padding-box;
+  box-shadow: 5px 10px 14px #07ace629;
+  border-radius: 40px;
+  letter-spacing: 0;
+  color: #ffffff;
+  line-height: 67px;
+  transition: 200ms all ease;
+
+  &:hover {
+    background: $color-gray1;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,51 @@
+$color1: #08a6e4;
+$color2: #fb3b64;
+$color3: #55dfb4;
+$color-gray1: #707070;
+$color-gray2: #95989a;
+$color-gray3: #a5a5a5;
+$font1: "Open Sans", sans-serif;
+$font2: "Raleway", sans-serif, sans-serif;
+
+@import "./reset";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: $font1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.hidden {
+  display: none;
+}
+
+@import "./header";
+@import "./opening";
+@import "./statistics";
+@import "./benefits";
+@import "./pricing";
+@import "./calculator";
+@import "./contact";
+@import "./footer";
+
+
+
+
+
+
+
+
+
