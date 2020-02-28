@@ -1,6 +1,6 @@
 .header {
   height: 70px;
-  
+  box-shadow: 0px 3px 6px #00000029;
   background: #fff;
   width: 100%;
   position: fixed;
@@ -10,7 +10,6 @@
 }
 
 .header .container {
-  box-shadow: 0px 3px 6px #00000029;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -93,9 +92,6 @@
 
 @media (max-width: 800px) {
 
-  .header-menu {
-  }
-
   .header-menu-list {
     position: absolute;
     left: 0;
@@ -127,9 +123,7 @@
     }
   }
 
-  .header-menu-list li {
-    
-  }
+  // .header-menu-list li {}
 
   .header-menu a::after {
     content: "";
