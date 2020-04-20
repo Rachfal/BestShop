@@ -1,9 +1,11 @@
 
 # BestShop
 
-Layout strony internetowej realizowany w ramach kursu Coders Lab.
+Layout strony internetowej realizowany w ramach kursu Coders Lab. <br>
+Demo https://rachfal.github.io/BestShop/
 
-Technologie:
+
+## Technologie:
 - `HTML`
-- `SCSS`
+- `SASS`
 - `JS`
